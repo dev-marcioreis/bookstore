@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--========Autor========-->
+    <meta name="author" contente="Marcio Reis">
+    <meta name="description" contente="Portfólio do desenvolvedor front-end Marcio Reis">
+    <meta name="keywords" contente="Portfolio, html, css, front-end, JavaScript, Desenvolvimento, React, React Native, Angular, NodeJS, Vue, Android, IOS, HTTP, SEO, Scrum, Bootstrap, Git, GitHub, Tailwind, Regex, QA, Php, TypeScript">
+    <!--========Icon========-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!--========CSS========-->
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!--========Favicon========-->
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <!--========JavaScript========-->
+    <script src="assets/js/main.js" defer></script>
+    <title>BookStore</title>
+</head>
+
+<body>
+    <!--========Header========-->
+    <header class="header" data-header>
+        <div class="header-top">
+            <div class="container">
+                <a href="#" class="logo">
+                    <img src="assets/images/logo.png" alt="Logo">
+                    BookStore
+                </a>
+                <div class="input-wrapper">
+                    <input type="search" placeholder="buscar livro..." class="input-field">
+                    <button class="btn btn-primary">Buscar</button>
+                </div>
+                <div class="header-action">
+                    <button class="header-action-btn" aria-label="cart" title="Cart">
+                        <span class="span">0</span>
+                        <i class="uil uil-shopping-bag" aria-hidden="true"></i>
+                    </button>
+                    <button class="nav-open-btn" aria-label="open menu" title="Open Menu" data-nav-toggler>
+                        <i class="uil uil-bars"></i>
+                    </button>
+                    <button class="header-action-btn" aria-label="user" title="User">
+                        <i class="uil uil-user"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom" data-navbar>
+            <div class="container">
+                <nav class="navbar">
+                    <button class="nav-close-btn" data-nav-toggler aria-label="close menu" title="Close Menu">
+                        <i class="uil uil-multiply"></i>
+                    </button>
+                    <div class="navbar-top">
+                        <input type="search" name="search" placeholder="buscar livro..." class="input-field">
+                        <button class="search-btn" aria-label="Search">
+                            <i class="uil uil-search"></i>
+                        </button>
+                    </div>
+                    <ul class="navbar-list">
+                        <li><a href="#" class="navbar-link">Home</a></li>
+                        <li><a href="#" class="navbar-link">Blog</a></li>
+                        <li><a href="#" class="navbar-link">Livros</a></li>
+                        <li><a href="#" class="navbar-link">Sobre nós</a></li>
+                        <li><a href="#" class="navbar-link">Contato</a></li>
+                    </ul>
+                </nav>
+                <a href="tel:115555-5555" class="header-contact-link">
+                    <i class="uil uil-phone-volume"></i>
+                    <span class="span">(11) 5555-5555</span>
+                </a>
+            </div>
+        </div>
+        <div class="overlay" data-overlay data-nav-toggler></div>
+    </header>
+
+    <!--========Main========-->
+    <main>
+        <article>
+            <!--========Hero========-->
+            <section class="section hero has-bg-image" aria-label="home">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1 class="h1 hero-title has-after">Sua nova coleção<br> de livros tech</h1>
+                        <p class="hero-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis quam facilis consequatur alias tenetur adipisci. Earum veritatis cumque facilis ipsa atque. Inventore, dolore unde. Optio recusandae voluptates unde tempora at.</p>
+                        <div class="btn-wrapper">
+                            <a href="#" class="btn">
+                                <span class="span">Carrinho</span>
+                                <i class="uil uil-shopping-cart-alt"></i>
+                            </a>
+                            <button class="play-btn" aria-label="play video">
+                                <i class="uil uil-play"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <figure class="hero-banner">
+                        <img src="assets/images/hero-banner.jpg" alt="Banner" class="w-100">
+                    </figure>
+                </div>
+            </section>
+            
+            <!--========Feature========-->
+            <section class="section feature" aria-label="feature">
+                <div class="container">
+                    <div class="grid-list">
+                        <li>
+                            <div class="feature-card">
+                                <div class="card-icon">
+                                    <img src="assets/images/feature-1.png" alt="Entrega grátis" class="w-100" loading="lazy"> 
+                                </div>
+                                <div>
+                                    <h3 class="h3 card-title">Entrega Grátis</h3>
+                                    <p class="card-text">Compras acima de 100R$</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="feature-card">
+                                <div class="card-icon">
+                                    <img src="assets/images/feature-2.png" alt="Entrega grátis" class="w-100" loading="lazy"> 
+                                </div>
+                                <div>
+                                    <h3 class="h3 card-title">Segurança</h3>
+                                    <p class="card-text">Suas compras seguras</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="feature-card">
+                                <div class="card-icon">
+                                    <img src="assets/images/feature-3.png" alt="Entrega grátis" class="w-100" loading="lazy"> 
+                                </div>
+                                <div>
+                                    <h3 class="h3 card-title">Especial</h3>
+                                    <p class="card-text">Sempre com descontos</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="feature-card">
+                                <div class="card-icon">
+                                    <img src="assets/images/feature-4.png" alt="Entrega grátis" class="w-100" loading="lazy"> 
+                                </div>
+                                <div>
+                                    <h3 class="h3 card-title">Facilidade</h3>
+                                    <p class="card-text">Todas as formas de pagamento</p>
+                                </div>
+                            </div>
+                        </li>
+                    </div>
+                </div>
+            </section>
+
+            <!--========Featured========-->
+            <section class="section featured" aria-label="featured collection">
+                <div class="container">
+                    <h2 class="h2 section-title">Coleções</h2>
+                    <p class="section-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, explicabo. Tempore incidunt quae, quos blanditiis sit illo tenetur illum repellendus. Magnam inventore a eos facilis maiores modi expedita eum accusantium?</p>
+                    <ul class="grid-list">
+                        <li>
+                            <div class="product-card">
+                                <span class="card-badge">Novo</span>
+                                <div class="card-banner img-holder">
+                                    <img src="assets/images/book-1.jpg" loading="lazy" alt="Livro" class="img-cover">
+                                    <div class="card-action">
+                                        <button class="action-btn" aria-label="quick view" title="Quick View">
+                                            <i class="uil uil-eye"></i>
+                                        </button>
+                                        <button class="action-btn" aria-label="add to wishlist" title="Add to Wishlist">
+                                            <i class="uil uil-heart"></i>
+                                        </button>
+                                        <button class="action-btn" aria-label="compare" title="Compare">
+                                            <i class="uil uil-redo"></i>
+                                        </button>
+                                        <button class="action-btn" aria-label="add to cart" title="Add to Cart">
+                                            <i class="uil uil-shopping-cart"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="h3"><a href="#" class="card-title">Livro NodeJS</a></h3>
+                                    <data class="card-price" value="19">R$ 19,90</data>
+                                    <div class="rating-wrapper">
+                                        <i class="uil uil-star"></i>
+                                        <i class="uil uil-star"></i>
+                                        <i class="uil uil-star"></i>
+                                        <i class="uil uil-star"></i>
+                                        <i class="uil uil-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-card">
+                                <div class="card-banner img-holder">
+                                    <img src="assets/images/book-5.jpg" loading="lazy" alt="Livro" class="img-cover">
+                                    <div class="card-action">
+                                        <button class="action-btn" aria-label="quick view" title="Quick View">
+                                            <i class="uil uil-eye"></i>
+                                        </button>
+                                        <button class="action-btn" aria-label="add to wishlist" title="Add to Wishlist">
+                                            <i class="uil uil-heart"></i>
+                                        </button>
+                                        <button class="action-btn" aria-label="compare" title="Compare">
+                                            <i class="uil uil-redo"></i>
+                                        </button>
+                                        <button class="action-btn" aria-label="add to cart" title="Add to Cart">
+                                            <i class="uil uil-shopping-cart"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="h3"><a href="#" class="card-title">Livro CSS</a></h3>
+                                    <data class="card-price" value="19">R$ 19,90</data>
+                                    <div class="rating-wrapper">
+                                        <i class="uil uil-star"></i>
+                                        <i class="uil uil-star"></i>
+                                        <i class="uil uil-star"></i>
+                                        <i class="uil uil-star"></i>
+                                        <i class="uil uil-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-card">
+                                <div class="card-banner img-holder">
+                                    <img src="assets/images/book-6.jpg" loading="lazy" alt="Livro" class="img-cover">
+                                    <div class="card-action">
+                                        <button class="action-btn" aria-label="quick view" title="Quick View">
+                                            <i class="uil uil-eye"></i>
+                                        </button>
+                                        <button class="action-btn" aria-label="add to wishlist" title="Add to Wishlist">
+                                            <i class="uil uil-heart"></i>
+                                        </button>
+                                        <button class="action-btn" aria-label="compare" title="Compare">
+                                            <i class="uil uil-redo"></i>
+                                        </button>
+                                        <button class="action-btn" aria-label="add to cart" title="Add to Cart">
+                                            <i class="uil uil-shopping-cart"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="h3"><a href="#" class="card-title">Livro React</a></h3>
+                                    <data class="card-price" value="19">R$ 19,90</data>
+                                    <div class="rating-wrapper">
+                                        <i class="uil uil-star"></i>
+                                        <i class="uil uil-star"></i>
+                                        <i class="uil uil-star"></i>
+                                        <i class="uil uil-star"></i>
+                                        <i class="uil uil-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-card">
+                                <span class="card-badge">Promoção</span>
+                                <div class="card-banner img-holder">
+                                    <img src="assets/images/book-7.jpg" loading="lazy" alt="Livro" class="img-cover">
+                                    <div class="card-action">
+                                        <button class="action-btn" aria-label="quick view" title="Quick View">
+                                            <i class="uil uil-eye"></i>
+                                        </button>
+                                        <button class="action-btn" aria-label="add to wishlist" title="Add to Wishlist">
+                                            <i class="uil uil-heart"></i>
+                                        </button>
+                                        <button class="action-btn" aria-label="compare" title="Compare">
+                                            <i class="uil uil-redo"></i>
+                                        </button>
+                                        <button class="action-btn" aria-label="add to cart" title="Add to Cart">
+                                            <i class="uil uil-shopping-cart"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="h3"><a href="#" class="card-title">Livro Python</a></h3>
+                                    <data class="card-price" value="19">R$ 19,90</data>
+                                    <div class="rating-wrapper">
+                                        <i class="uil uil-star"></i>
+                                        <i class="uil uil-star"></i>
+                                        <i class="uil uil-star"></i>
+                                        <i class="uil uil-star"></i>
+                                        <i class="uil uil-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-card">
+                                <div class="card-banner img-holder">
+                                    <img src="assets/images/book-8.jpg" loading="lazy" alt="Livro" class="img-cover">
+                                    <div class="card-action">
+                                        <button class="action-btn" aria-label="quick view" title="Quick View">
+                                            <i class="uil uil-eye"></i>
+                                        </button>
+                                        <button class="action-btn" aria-label="add to wishlist" title="Add to Wishlist">
+                                            <i class="uil uil-heart"></i>
+                                        </button>
+                                        <button class="action-btn" aria-label="compare" title="Compare">
+                                            <i class="uil uil-redo"></i>
+                                        </button>
+                                        <button class="action-btn" aria-label="add to cart" title="Add to Cart">
+                                            <i class="uil uil-shopping-cart"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="h3"><a href="#" class="card-title">Livro Java</a></h3>
+                                    <data class="card-price" value="19">R$ 19,90</data>
+                                    <div class="rating-wrapper">
+                                        <i class="uil uil-star"></i>
+                                        <i class="uil uil-star"></i>
+                                        <i class="uil uil-star"></i>
+                                        <i class="uil uil-star"></i>
+                                        <i class="uil uil-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!--========Offer========-->
+            <section class="section offer has-bg-image" aria-label="special offer">
+                <div class="container">
+                    <p class="section-subtitle">Ofertas especiais</p>
+                    <h2 class="h2 section-title">Todos os livros com 50% de desconto!</h2>
+                    <p class="section-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi maxime assumenda, mollitia corporis facilis dolore cupiditate! Accusantium, alias? Praesentium necessitatibus corporis dignissimos ad neque odio tenetur beatae sit blanditiis quam.</p>
+                    <ul class="countdow-list">
+                        <li>
+                            <p class="cuntdown-time">20</p>
+                            <p class="countdown-label">Dias</p>
+                        </li>
+                        <li>
+                            <p class="cuntdown-time">10</p>
+                            <p class="countdown-label">Horas</p>
+                        </li>
+                        <li>
+                            <p class="cuntdown-time">22</p>
+                            <p class="countdown-label">Minutos</p>
+                        </li>
+                        <li>
+                            <p class="cuntdown-time">45</p>
+                            <p class="countdown-label">Segundos</p>
+                        </li>
+                    </ul>
+                    <a href="#" class="btn">Saiba mais</a>
+                </div>
+            </section>
+
+            <!--========Popular========-->
+            <section class="section popular" aria-label="popular collection">
+                <div class="container">
+                    <h2 class="h2 section-title">Livros populares</h2>
+                    <p class="section-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi vero nulla maiores consequatur adipisci reprehenderit eaque minima qui, ducimus voluptatum velit illo accusantium labore. Voluptatem iste ducimus rem qui libero!</p>
+                    <ul class="filter-list">
+                        <li>
+                            <button class="filter-btn" data-filter-btn="featured">Destaques</button>
+                        </li>
+                        <li>
+                            <button class="filter-btn" data-filter-btn="new">Novos</button>
+                        </li>
+                        <li>
+                            <button class="filter-btn" data-filter-btn="sell">Lançamentos</button>
+                        </li>
+                    </ul>
+                    <ul class="product-list has-scrollbar">
+                        <li class="scrollbar-item" data-filter="featured">
+                            <div class="product-card">
+                                <div class="card-banner img-holder">
+                                    <img src="assets/images/book-1.jpg" loading="lazy" alt="Livro" class="img-cover">
+                                    <div class="card-action">
+                                        <button class="action-btn" aria-label="quick view" title="Quick View">
+                                            <i class="uil uil-eye"></i>
+                                        </button>
+                                        <button class="action-btn" aria-label="add to wishlist" title="Add to Wishlist">
+                                            <i class="uil uil-heart"></i>
+                                        </button>
+                                        <button class="action-btn" aria-label="compare" title="Compare">
+                                            <i class="uil uil-redo"></i>
+                                        </button>
+                                        <button class="action-btn" aria-label="add to cart" title="Add to Cart">
+                                            <i class="uil uil-shopping-cart"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="h3"><a href="#" class="card-title">Livro NodeJS</a></h3>
+                                    <data class="card-price" value="19">R$ 19,90</data>
+                                    <div class="rating-wrapper">
+                                        <i class="uil uil-star"></i>
+                                        <i class="uil uil-star"></i>
+                                        <i class="uil uil-star"></i>
+                                        <i class="uil uil-star"></i>
+                                        <i class="uil uil-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="scrollbar-item" data-filter="new">
+                            <div class="product-card">
+                                <div class="card-banner img-holder">
+                                    <img src="assets/images/book-2.jpg" loading="lazy" alt="Livro" class="img-cover">
+                                    <div class="card-action">
+                                        <button class="action-btn" aria-label="quick view" title="Quick View">
+                                            <i class="uil uil-eye"></i>
+                                        </button>
+                                        <button class="action-btn" aria-label="add to wishlist" title="Add to Wishlist">
+                                            <i class="uil uil-heart"></i>
+                                        </button>
+                                        <button class="action-btn" aria-label="compare" title="Compare">
+                                            <i class="uil uil-redo"></i>
+                                        </button>
+                                        <button class="action-btn" aria-label="add to cart" title="Add to Cart">
+                                            <i class="uil uil-shopping-cart"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="h3"><a href="#" class="card-title">Livro JavaScript</a></h3>
+                                    <data class="card-price" value="19">R$ 19,90</data>
+                                    <div class="rating-wrapper">
+                                        <i class="uil uil-star"></i>
+                                        <i class="uil uil-star"></i>
+                                        <i class="uil uil-star"></i>
+                                        <i class="uil uil-star"></i>
+                                        <i class="uil uil-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="scrollbar-item" data-filter="sell">
+                            <div class="product-card">
+                                <div class="card-banner img-holder">
+                                    <img src="assets/images/book-3.jpg" loading="lazy" alt="Livro" class="img-cover">
+                                    <div class="card-action">
+                                        <button class="action-btn" aria-label="quick view" title="Quick View">
+                                            <i class="uil uil-eye"></i>
+                                        </button>
+                                        <button class="action-btn" aria-label="add to wishlist" title="Add to Wishlist">
+                                            <i class="uil uil-heart"></i>
+                                        </button>
+                                        <button class="action-btn" aria-label="compare" title="Compare">
+                                            <i class="uil uil-redo"></i>
+                                        </button>
+                                        <button class="action-btn" aria-label="add to cart" title="Add to Cart">
+                                            <i class="uil uil-shopping-cart"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="h3"><a href="#" class="card-title">Livro Lógica de programação</a></h3>
+                                    <data class="card-price" value="19">R$ 19,90</data>
+                                    <div class="rating-wrapper">
+                                        <i class="uil uil-star"></i>
+                                        <i class="uil uil-star"></i>
+                                        <i class="uil uil-star"></i>
+                                        <i class="uil uil-star"></i>
+                                        <i class="uil uil-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="scrollbar-item" data-filter="featured">
+                            <div class="product-card">
+                                <div class="card-banner img-holder">
+                                    <img src="assets/images/book-4.jpg" loading="lazy" alt="Livro" class="img-cover">
+                                    <div class="card-action">
+                                        <button class="action-btn" aria-label="quick view" title="Quick View">
+                                            <i class="uil uil-eye"></i>
+                                        </button>
+                                        <button class="action-btn" aria-label="add to wishlist" title="Add to Wishlist">
+                                            <i class="uil uil-heart"></i>
+                                        </button>
+                                        <button class="action-btn" aria-label="compare" title="Compare">
+                                            <i class="uil uil-redo"></i>
+                                        </button>
+                                        <button class="action-btn" aria-label="add to cart" title="Add to Cart">
+                                            <i class="uil uil-shopping-cart"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="h3"><a href="#" class="card-title">Livro jQuery</a></h3>
+                                    <data class="card-price" value="19">R$ 19,90</data>
+                                    <div class="rating-wrapper">
+                                        <i class="uil uil-star"></i>
+                                        <i class="uil uil-star"></i>
+                                        <i class="uil uil-star"></i>
+                                        <i class="uil uil-star"></i>
+                                        <i class="uil uil-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="scrollbar-item" data-filter="new">
+                            <div class="product-card">
+                                <div class="card-banner img-holder">
+                                    <img src="assets/images/book-5.jpg" loading="lazy" alt="Livro" class="img-cover">
+                                    <div class="card-action">
+                                        <button class="action-btn" aria-label="quick view" title="Quick View">
+                                            <i class="uil uil-eye"></i>
+                                        </button>
+                                        <button class="action-btn" aria-label="add to wishlist" title="Add to Wishlist">
+                                            <i class="uil uil-heart"></i>
+                                        </button>
+                                        <button class="action-btn" aria-label="compare" title="Compare">
+                                            <i class="uil uil-redo"></i>
+                                        </button>
+                                        <button class="action-btn" aria-label="add to cart" title="Add to Cart">
+                                            <i class="uil uil-shopping-cart"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="h3"><a href="#" class="card-title">Livro CSS</a></h3>
+                                    <data class="card-price" value="19">R$ 19,90</data>
+                                    <div class="rating-wrapper">
+                                        <i class="uil uil-star"></i>
+                                        <i class="uil uil-star"></i>
+                                        <i class="uil uil-star"></i>
+                                        <i class="uil uil-star"></i>
+                                        <i class="uil uil-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="scrollbar-item" data-filter="sell">
+                            <div class="product-card">
+                                <div class="card-banner img-holder">
+                                    <img src="assets/images/book-6.jpg" loading="lazy" alt="Livro" class="img-cover">
+                                    <div class="card-action">
+                                        <button class="action-btn" aria-label="quick view" title="Quick View">
+                                            <i class="uil uil-eye"></i>
+                                        </button>
+                                        <button class="action-btn" aria-label="add to wishlist" title="Add to Wishlist">
+                                            <i class="uil uil-heart"></i>
+                                        </button>
+                                        <button class="action-btn" aria-label="compare" title="Compare">
+                                            <i class="uil uil-redo"></i>
+                                        </button>
+                                        <button class="action-btn" aria-label="add to cart" title="Add to Cart">
+                                            <i class="uil uil-shopping-cart"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="h3"><a href="#" class="card-title">Livro React</a></h3>
+                                    <data class="card-price" value="19">R$ 19,90</data>
+                                    <div class="rating-wrapper">
+                                        <i class="uil uil-star"></i>
+                                        <i class="uil uil-star"></i>
+                                        <i class="uil uil-star"></i>
+                                        <i class="uil uil-star"></i>
+                                        <i class="uil uil-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="scrollbar-item" data-filter="featured">
+                            <div class="product-card">
+                                <div class="card-banner img-holder">
+                                    <img src="assets/images/book-7.jpg" loading="lazy" alt="Livro" class="img-cover">
+                                    <div class="card-action">
+                                        <button class="action-btn" aria-label="quick view" title="Quick View">
+                                            <i class="uil uil-eye"></i>
+                                        </button>
+                                        <button class="action-btn" aria-label="add to wishlist" title="Add to Wishlist">
+                                            <i class="uil uil-heart"></i>
+                                        </button>
+                                        <button class="action-btn" aria-label="compare" title="Compare">
+                                            <i class="uil uil-redo"></i>
+                                        </button>
+                                        <button class="action-btn" aria-label="add to cart" title="Add to Cart">
+                                            <i class="uil uil-shopping-cart"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="h3"><a href="#" class="card-title">Livro Python</a></h3>
+                                    <data class="card-price" value="19">R$ 19,90</data>
+                                    <div class="rating-wrapper">
+                                        <i class="uil uil-star"></i>
+                                        <i class="uil uil-star"></i>
+                                        <i class="uil uil-star"></i>
+                                        <i class="uil uil-star"></i>
+                                        <i class="uil uil-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="scrollbar-item" data-filter="new">
+                            <div class="product-card">
+                                <div class="card-banner img-holder">
+                                    <img src="assets/images/book-8.jpg" loading="lazy" alt="Livro" class="img-cover">
+                                    <div class="card-action">
+                                        <button class="action-btn" aria-label="quick view" title="Quick View">
+                                            <i class="uil uil-eye"></i>
+                                        </button>
+                                        <button class="action-btn" aria-label="add to wishlist" title="Add to Wishlist">
+                                            <i class="uil uil-heart"></i>
+                                        </button>
+                                        <button class="action-btn" aria-label="compare" title="Compare">
+                                            <i class="uil uil-redo"></i>
+                                        </button>
+                                        <button class="action-btn" aria-label="add to cart" title="Add to Cart">
+                                            <i class="uil uil-shopping-cart"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="h3"><a href="#" class="card-title">Livro Java</a></h3>
+                                    <data class="card-price" value="19">R$ 19,90</data>
+                                    <div class="rating-wrapper">
+                                        <i class="uil uil-star"></i>
+                                        <i class="uil uil-star"></i>
+                                        <i class="uil uil-star"></i>
+                                        <i class="uil uil-star"></i>
+                                        <i class="uil uil-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="scrollbar-item" data-filter="sell">
+                            <div class="product-card">
+                                <div class="card-banner img-holder">
+                                    <img src="assets/images/book-9.jpg" loading="lazy" alt="Livro" class="img-cover">
+                                    <div class="card-action">
+                                        <button class="action-btn" aria-label="quick view" title="Quick View">
+                                            <i class="uil uil-eye"></i>
+                                        </button>
+                                        <button class="action-btn" aria-label="add to wishlist" title="Add to Wishlist">
+                                            <i class="uil uil-heart"></i>
+                                        </button>
+                                        <button class="action-btn" aria-label="compare" title="Compare">
+                                            <i class="uil uil-redo"></i>
+                                        </button>
+                                        <button class="action-btn" aria-label="add to cart" title="Add to Cart">
+                                            <i class="uil uil-shopping-cart"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="h3"><a href="#" class="card-title">Livro Java</a></h3>
+                                    <data class="card-price" value="19">R$ 19,90</data>
+                                    <div class="rating-wrapper">
+                                        <i class="uil uil-star"></i>
+                                        <i class="uil uil-star"></i>
+                                        <i class="uil uil-star"></i>
+                                        <i class="uil uil-star"></i>
+                                        <i class="uil uil-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!--========Blog========-->
+            <section class="section blog" aria-label="blog">
+                <div class="container">
+                    <h2 class="h2 section-title">Blog</h2>
+                    <p class="section-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum numquam optio voluptates, culpa rem quidem rerum maxime, exercitationem excepturi possimus quo! Dicta voluptates iusto itaque, repudiandae quo ipsam perspiciatis incidunt?</p>
+                    <ul class="has-scrollbar">
+                        <li class="scrollbar-item">
+                            <div class="blog-card">
+                                <figure class="card-banner img-holder">
+                                    <img src="assets/images/blog-1.jpg" alt="Blog" class="img-cover">
+                                </figure>
+                                <div class="card-content">
+                                    <h3 class="h3"><a href="#" class="card-title">Informação</a></h3>
+                                    <ul class="card-meta-list">
+                                        <li class="meta-item">
+                                            <time class="meta-link" datetime="29-11-2022">Novembro 2022</time> 
+                                        </li>
+                                        <li class="meta-item">
+                                            <a class="meta-link">2 Comentários</a> 
+                                        </li>
+                                    </ul>
+                                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem ad maiores tempora, sunt at perspiciatis, quod consequatur beatae ea cumque exercitationem repudiandae veniam ipsa accusantium repellendus atque? Iste, nesciunt? Rem.</p>
+                                    <a href="#" class="btn card-btn">Saiba mais</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="scrollbar-item">
+                            <div class="blog-card">
+                                <figure class="card-banner img-holder">
+                                    <img src="assets/images/blog-2.jpg" alt="Blog" class="img-cover">
+                                </figure>
+                                <div class="card-content">
+                                    <h3 class="h3"><a href="#" class="card-title">Informação</a></h3>
+                                    <ul class="card-meta-list">
+                                        <li class="meta-item">
+                                            <time class="meta-link" datetime="29-11-2022">Novembro 2022</time> 
+                                        </li>
+                                        <li class="meta-item">
+                                            <a class="meta-link">2 Comentários</a> 
+                                        </li>
+                                    </ul>
+                                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem ad maiores tempora, sunt at perspiciatis, quod consequatur beatae ea cumque exercitationem repudiandae veniam ipsa accusantium repellendus atque? Iste, nesciunt? Rem.</p>
+                                    <a href="#" class="btn card-btn">Saiba mais</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="scrollbar-item">
+                            <div class="blog-card">
+                                <figure class="card-banner img-holder">
+                                    <img src="assets/images/blog-3.jpg" alt="Blog" class="img-cover">
+                                </figure>
+                                <div class="card-content">
+                                    <h3 class="h3"><a href="#" class="card-title">Informação</a></h3>
+                                    <ul class="card-meta-list">
+                                        <li class="meta-item">
+                                            <time class="meta-link" datetime="29-11-2022">Novembro 2022</time> 
+                                        </li>
+                                        <li class="meta-item">
+                                            <a class="meta-link">2 Comentários</a> 
+                                        </li>
+                                    </ul>
+                                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem ad maiores tempora, sunt at perspiciatis, quod consequatur beatae ea cumque exercitationem repudiandae veniam ipsa accusantium repellendus atque? Iste, nesciunt? Rem.</p>
+                                    <a href="#" class="btn card-btn">Saiba mais</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <!--========Footer========-->
+    <footer class="footer has-bg-image" style="background-image: url('./assets/images/stars.png');">
+        <div class="footer-top section">
+            <div class="container grid-list">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <img src="assets/images/logo.png" alt="Logo">BookStore
+                    </a>
+                    <p class="footer-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit vel totam beatae aut natus accusamus dolorem libero provident deserunt, hic sed tempore quas. Quidem iusto cumque eius laboriosam, eum quos.</p>
+                    <ul class="social-list">
+                        <li><a href="#" class="social-link"><i class="uil uil-facebook-f"></i></a></li>
+                        <li><a href="#" class="social-link"><i class="uil uil-instagram"></i></a></li>
+                        <li><a href="#" class="social-link"><i class="uil uil-twitter-alt"></i></a></li>
+                        <li><a href="#" class="social-link"><i class="uil uil-youtube"></i></a></li>
+                        <li><a href="#" class="social-link"><i class="uil uil-snapchat-ghost"></i></a></li>
+                    </ul>
+                </div>
+                <ul class="footer-list">
+                    <li><p class="footer-list-title">A BookStore</p></li>
+                    <li><a href="#" class="footer-link">Trabalhe</a></li>
+                    <li><a href="#" class="footer-link">Editora</a></li>
+                    <li><a href="#" class="footer-link">Clientes</a></li>
+                    <li><a href="#" class="footer-link">FAQ</a></li>
+                </ul>
+                <ul class="footer-list">
+                    <li><p class="footer-list-title">Informação</p></li>
+                    <li><a href="#" class="footer-link">Loja</a></li>
+                    <li><a href="#" class="footer-link">Privacidade</a></li>
+                    <li><a href="#" class="footer-link">Entrega</a></li>
+                    <li><a href="#" class="footer-link">Serviços</a></li>
+                </ul>
+                <ul class="footer-list">
+                    <li><p class="footer-list-title">Site</p></li>
+                    <li><a href="#" class="footer-link">Home</a></li>
+                    <li><a href="#" class="footer-link">Blog</a></li>
+                    <li><a href="#" class="footer-link">Livros</a></li>
+                    <li><a href="#" class="footer-link">Sobre</a></li>
+                    <li><a href="#" class="footer-link">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p class="copy">&copy; 2022 - Todos os direitos reservados.</p>
+                <img src="assets/images/payment.png" alt="Pagamento" class="w-100">
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
