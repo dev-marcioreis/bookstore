@@ -656,3 +656,10 @@ i {
     max-width: max-content;
     margin-inline: auto;
 }
+
+/*==========Media Query==========*/
+@media (min-width: 550px) {
+    body {
+        display: none;
+    }
+}
