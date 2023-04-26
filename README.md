@@ -7,7 +7,7 @@ Este projeto só está pronto para mobile!
 
 ## 🚀 Finalizado.
 
-## 📋 Técnologias
+## 📋 Tecnologias
 HTML + CSS + JavaScript
 
 ## ✒️ Autor
